@@ -9,36 +9,36 @@ export class InteractionComponent implements OnInit {
 
   private json = [
     {
-      name: "cholesterol",
+      name: "Cholesterol",
       value: 220,
       min: 150,
       max: 300,
       step: 1,
-      description: "some description"
+      description: "Cholesterol is not “bad”: your body needs it to build cells. But too much can be a problem."
     },
     {
-      name: "hdl",
+      name: "HDL",
       value: 43,
       min: 10,
       max: 80,
       step: 1,
-      description: "some description"
+      description: "Think of HDL as the “healthy” cholesterol, so higher levels are better."
     },
     {
-      name: "ldl",
+      name: "LDL",
       value: 60,
       min: 50,
       max: 250,
       step: 1,
-      description: "some description"
+      description: "LDL cholesterol is called “bad” cholesterol. Think of it as less desirable or even lousy cholesterol, because it contributes to fatty buildups in arteries."
     },
     {
-      name: "triglycerides",
+      name: "Triglycerides",
       value: 50,
       min: 0,
       max: 150,
       step: 1,
-      description: "some description"
+      description: "Triglycerides are the most common type of fat in the body; they store excess energy from your diet."
     }
   ]
 

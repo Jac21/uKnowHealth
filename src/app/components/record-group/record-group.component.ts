@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RecordLine } from '../record-line/record-line';
 
 @Component({
@@ -6,12 +6,12 @@ import { RecordLine } from '../record-line/record-line';
   templateUrl: './record-group.component.html',
   styleUrls: ['./record-group.component.css']
 })
-export class RecordGroupComponent implements OnInit {
-
-  constructor() { }
+export class RecordGroupComponent {
 
   @Input() recordLines: RecordLine[];
-  ngOnInit() {
-  }
+  @Input() age: number;
+  @Input() gender: number;
+
+  constructor() { }
 
 }

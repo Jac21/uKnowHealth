@@ -1,4 +1,14 @@
 <app-navbar></app-navbar>
-<app-record-group [recordLines]="recordLines"></app-record-group>
-<app-video></app-video>
-<app-resources></app-resources>
+<app-record-group [recordLines]="recordLines" [age]="age" [gender]="gender"></app-record-group>
+
+<md-grid-list cols="1">
+  <md-grid-tile>
+  <app-select-dropdown (ageEmitter)="ageChanged($event)" (genderEmitter)="genderChanged($event)"></app-select-dropdown>
+  <button md-button (click)="onClick()">Evaluate</button>
+  </md-grid-tile>
+</md-grid-list>
+
+<div *ngIf="showResources">
+  <app-video></app-video>
+  <app-resources></app-resources>
+</div>

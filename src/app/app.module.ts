@@ -14,6 +14,8 @@ import {MdIconModule} from '@angular/material';
 import {MdGridListModule} from '@angular/material';
 import {MdButtonModule} from '@angular/material';
 import {MdCardModule} from '@angular/material';
+import {MdSelectModule} from '@angular/material';
+
 
 import 'hammerjs';
 
@@ -26,6 +28,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { InteractionComponent } from './components/interaction/interaction.component';
 import { RecordGroupComponent } from './components/record-group/record-group.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { SelectDropdownComponent } from './components/select-dropdown/select-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { LandingComponent } from './components/landing/landing.component';
     NavbarComponent,
     InteractionComponent,
     RecordGroupComponent,
-    LandingComponent
+    LandingComponent,
+    SelectDropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,8 @@ import { LandingComponent } from './components/landing/landing.component';
     MdGridListModule,
     MdButtonModule,
     MdTooltipModule,
-    MdCardModule
+    MdCardModule,
+    MdSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

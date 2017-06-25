@@ -8,7 +8,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class VideoComponent implements OnInit {
   url: SafeResourceUrl;
-  video: any = {id: 'dQw4w9WgXcQ'};
+  video: any = {id: 'BmDDD2arYoo'};
   baseUrl: string = 'https://www.youtube.com/embed/';
 
   constructor(private sanitizer: DomSanitizer) { 

@@ -1,3 +1,10 @@
-<p>
-  searchbar works!
-</p>
+<md-input-container>
+  <input mdInput placeholder="Enter your query here..." [mdAutocomplete]="auto" [formControl]="searchCtrl">
+</md-input-container>
+
+<md-autocomplete #auto="mdAutocomplete">
+  <md-option *ngFor="let query of filteredStates | async" [value]="query">
+    {{ query }}
+  </md-option>
+</md-autocomplete>
+<a routerLink='/interaction'><button md-raised-button class="search-button">Search</button></a>

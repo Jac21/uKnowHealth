@@ -1,11 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes/app.routes';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdSliderModule} from '@angular/material';
 import {MdToolbarModule} from '@angular/material';
+import {MdInputModule} from '@angular/material';
+import {MdAutocompleteModule} from '@angular/material';
+import {MdIconModule} from '@angular/material';
+import {MdGridListModule} from '@angular/material';
+import {MdButtonModule} from '@angular/material';
 
 import 'hammerjs';
 
@@ -29,10 +35,17 @@ import { InteractionComponent } from './components/interaction/interaction.compo
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MdSliderModule,
-    MdToolbarModule
+    MdToolbarModule,
+    MdInputModule,
+    MdAutocompleteModule,
+    MdIconModule,
+    MdGridListModule,
+    MdButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

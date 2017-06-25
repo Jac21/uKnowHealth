@@ -3,7 +3,7 @@
 }
 
 label{
-	font-size: 50px;
+	font-size: 40px;
 }
 
 app-record-line{
@@ -15,9 +15,12 @@ app-record-line{
 }
 
 .mat-input-element{
-	font-size: 60px;
+	font-size: 40px;
 	color: salmon;
 	width: 200px;
+	margin-left: 20px;
+	position: relative;
+	bottom: -4px;
 }
 
 .floatyblockright{
@@ -30,5 +33,5 @@ app-record-line{
 }
 
 md-slider{
-	width: 1000px;
+	width: 400px;
 }

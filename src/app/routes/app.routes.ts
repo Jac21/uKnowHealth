@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
 
-import { NavbarComponent } from '../components/navbar/navbar.component';
+import { AppComponent } from '../components/app/app.component';
+import { LandingComponent } from '../components/landing/landing.component';
 import { InteractionComponent } from '../components/interaction/interaction.component';
 
 export const appRoutes: Routes = [
-    { path: '', component: NavbarComponent, pathMatch: 'full' },
+    { path: '', component: LandingComponent, pathMatch: 'full' },
     { path: 'interaction', component: InteractionComponent }
 ];

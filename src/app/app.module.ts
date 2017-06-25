@@ -1,11 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { appRoutes } from './routes/app.routes';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdSliderModule, MdToolbarModule, MdInputModule, MdTooltipModule} from '@angular/material';
+import {MdSliderModule} from '@angular/material';
+import {MdToolbarModule} from '@angular/material';
+import {MdInputModule} from '@angular/material';
+import {MdTooltipModule} from '@angular/material';
+import {MdAutocompleteModule} from '@angular/material';
+import {MdIconModule} from '@angular/material';
+import {MdGridListModule} from '@angular/material';
+import {MdButtonModule} from '@angular/material';
+import {MdCardModule} from '@angular/material';
 
 import 'hammerjs';
 
@@ -17,6 +25,7 @@ import { ResourcesComponent } from './components/resources/resources.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { InteractionComponent } from './components/interaction/interaction.component';
 import { RecordGroupComponent } from './components/record-group/record-group.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -27,17 +36,25 @@ import { RecordGroupComponent } from './components/record-group/record-group.com
     ResourcesComponent,
     NavbarComponent,
     InteractionComponent,
-    RecordGroupComponent
+    RecordGroupComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     FormsModule,
     MdSliderModule,
     MdToolbarModule,
     MdInputModule,
-    MdTooltipModule
+    MdAutocompleteModule,
+    MdIconModule,
+    MdGridListModule,
+    MdButtonModule,
+    MdTooltipModule,
+    MdCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,24 @@
 .example-card {
   width: 200px;
+  height: 400px;
 }
 
 .example-header-image {
   background-image: url('../../../assets/resource-images/plate.jpg');
+  background-size: cover;
+}
+
+.diabetes-header-image {
+  background-image: url('../../../assets/resource-images/diabetes.jpg');
+  background-size: cover;
+}
+
+.BP-header-image {
+  background-image: url('../../../assets/resource-images/BP.jpg');
+  background-size: cover;
+}
+
+.trigly-header-image {
+  background-image: url('../../../assets/resource-images/triglycerides.jpg');
   background-size: cover;
 }

@@ -7,5 +7,10 @@
 }
 
 a {
-    color:red;
+    color:white;
+    text-decoration: none;
+}
+
+.mat-toolbar.mat-primary {
+    background: #00bcd4;
 }

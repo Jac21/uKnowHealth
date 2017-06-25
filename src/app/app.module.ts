@@ -29,6 +29,7 @@ import { InteractionComponent } from './components/interaction/interaction.compo
 import { RecordGroupComponent } from './components/record-group/record-group.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { SelectDropdownComponent } from './components/select-dropdown/select-dropdown.component';
+import { IntroTextComponent } from './components/intro-text/intro-text.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SelectDropdownComponent } from './components/select-dropdown/select-dro
     InteractionComponent,
     RecordGroupComponent,
     LandingComponent,
-    SelectDropdownComponent
+    SelectDropdownComponent,
+    IntroTextComponent
   ],
   imports: [
     BrowserModule,

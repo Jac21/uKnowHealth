@@ -1,0 +1,8 @@
+.example-card {
+  width: 200px;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/resource-images/plate.jpg');
+  background-size: cover;
+}

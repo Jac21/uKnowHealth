@@ -2,12 +2,10 @@
 <app-intro-text></app-intro-text>
 <app-record-group [recordLines]="recordLines" [age]="age" [gender]="gender"></app-record-group>
 
-<md-grid-list cols="1">
-  <md-grid-tile>
+<div class="specify-container">
   <app-select-dropdown (ageEmitter)="ageChanged($event)" (genderEmitter)="genderChanged($event)"></app-select-dropdown>
-  <button md-button (click)="onClick()">Evaluate</button>
-  </md-grid-tile>
-</md-grid-list>
+  <button class="search-button mat-raised-button" md-button (click)="onClick()">Evaluate</button>
+</div>
 
 <div *ngIf="showResources">
   <app-video></app-video>

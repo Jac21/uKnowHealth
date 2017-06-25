@@ -1,25 +1,17 @@
 <div class="recordthings">
-	<md-grid-list cols="2" rowHeight="80px">
-
-	<md-grid-tile>
-		<label class="floatyboy" [mdTooltip]="record.description">
+	<md-grid-list cols="2" rowHeight="50px">
+<md-grid-tile>
+		<label class="" [mdTooltip]="record.description">
 			{{record.name}}
 		</label>
-	</md-grid-tile>
 
-	<md-grid-tile>
-	</md-grid-tile>
-
-	<md-grid-tile>
-		<md-input-container class="floatyblockright" id="input">
-			<input mdInput [(ngModel)]="record.value"/>
+		<md-input-container class="" id="input">
+			<input mdInput [(ngModel)]="actualValue"/>
 		</md-input-container>
-	</md-grid-tile>
-
-	<md-grid-tile>
+</md-grid-tile>
+<md-grid-tile>
 	<md-slider [min]="record.min" [max]="record.max" [step]="0.5" [value]="actualValue" thumbLabel tickInterval="1"></md-slider>
-	</md-grid-tile>
-
+</md-grid-tile>
 	</md-grid-list>
 </div>
 

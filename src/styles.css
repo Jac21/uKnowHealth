@@ -2,5 +2,5 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 body{
-	font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
 }

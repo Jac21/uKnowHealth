@@ -16,6 +16,7 @@ import { VideoComponent } from './components/video/video.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { InteractionComponent } from './components/interaction/interaction.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { InteractionComponent } from './components/interaction/interaction.compo
     VideoComponent,
     ResourcesComponent,
     NavbarComponent,
-    InteractionComponent
+    InteractionComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

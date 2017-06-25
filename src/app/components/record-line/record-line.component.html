@@ -4,8 +4,8 @@
 		
 	</label>
 	<md-input-container id="input">
-		<input mdInput [(ngModel)]="record.value"/>
+		<input mdInput [(ngModel)]="actualValue"/>
 	</md-input-container>
-	<md-slider [min]="record.min" [max]="record.max" [step]="0.5" [value]="record.value" thumbLabel tickInterval="1"></md-slider>
+	<md-slider [min]="record.min" [max]="record.max" [step]="0.5" [value]="actualValue" thumbLabel tickInterval="1"></md-slider>
 </div>
 

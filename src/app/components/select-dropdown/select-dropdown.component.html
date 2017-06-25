@@ -1,0 +1,12 @@
+<label>For</label>
+<md-select placeholder="Gender" [(ngModel)]="genderValue" (change)="onGenderChanged()">
+  <md-option *ngFor="let gender of genders" [value]="gender.value">
+    {{ gender.viewValue }}
+  </md-option>
+</md-select>
+
+<md-select placeholder="Age" [(ngModel)]="ageValue" (change)="onAgeChanged()">
+  <md-option *ngFor="let age of ages" [value]="age.value">
+    {{ age.viewValue }}
+  </md-option>
+</md-select>

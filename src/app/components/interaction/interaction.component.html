@@ -1,4 +1,9 @@
 <app-navbar></app-navbar>
-<app-record-group [recordLines]="recordLines"></app-record-group>
-<app-video></app-video>
-<app-resources></app-resources>
+<app-select-dropdown (ageEmitter)="ageChanged($event)" (genderEmitter)="genderChanged($event)"></app-select-dropdown>
+<app-record-group [recordLines]="recordLines" [age]="age" [gender]="gender"></app-record-group>
+<button md-button (click)="onClick()">Evaluate</button>
+
+<div *ngIf="showResources">
+  <app-video></app-video>
+  <app-resources></app-resources>
+</div>

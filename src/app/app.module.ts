@@ -12,6 +12,7 @@ import {MdAutocompleteModule} from '@angular/material';
 import {MdIconModule} from '@angular/material';
 import {MdGridListModule} from '@angular/material';
 import {MdButtonModule} from '@angular/material';
+import {MdCardModule} from '@angular/material';
 
 import 'hammerjs';
 
@@ -47,7 +48,8 @@ import { LandingComponent } from './components/landing/landing.component';
     MdAutocompleteModule,
     MdIconModule,
     MdGridListModule,
-    MdButtonModule
+    MdButtonModule,
+    MdCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

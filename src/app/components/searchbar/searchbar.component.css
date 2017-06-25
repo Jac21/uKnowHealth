@@ -1,3 +1,47 @@
 .search-button {
     color:black;
 }
+
+.mat-input-placeholder{
+	text-shadow: none;
+}
+
+input{
+	background: #ffff11;
+}
+
+span{
+	text-shadow: none;
+}
+
+#md-input-1 {
+    color:black;
+}
+
+input[_ngcontent-c3] {
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    padding: 2px;
+}
+
+.mat-input-placeholder.mat-empty{
+    text-shadow: none;
+}
+
+a {
+    position: relative;
+    bottom: 6.5px;
+    left: 10px;
+}
+.hero-section[_ngcontent-c1] .hero-section-text[_ngcontent-c1] {
+    color: #fefefe;
+}
+
+.mat-input-placeholder.mat-empty {
+    text-shadow: none;
+}
+
+body{
+    text-shadow:none;
+}

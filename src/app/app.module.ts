@@ -8,6 +8,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdSliderModule} from '@angular/material';
 import {MdToolbarModule} from '@angular/material';
 import {MdInputModule} from '@angular/material';
+import {MdTooltipModule} from '@angular/material';
 import {MdAutocompleteModule} from '@angular/material';
 import {MdIconModule} from '@angular/material';
 import {MdGridListModule} from '@angular/material';
@@ -23,17 +24,19 @@ import { VideoComponent } from './components/video/video.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { InteractionComponent } from './components/interaction/interaction.component';
+import { RecordGroupComponent } from './components/record-group/record-group.component';
 import { LandingComponent } from './components/landing/landing.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
     SearchbarComponent,
     RecordLineComponent,
     VideoComponent,
     ResourcesComponent,
     NavbarComponent,
     InteractionComponent,
+    RecordGroupComponent,
     LandingComponent
   ],
   imports: [
@@ -42,6 +45,7 @@ import { LandingComponent } from './components/landing/landing.component';
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
+    FormsModule,
     MdSliderModule,
     MdToolbarModule,
     MdInputModule,
@@ -49,6 +53,7 @@ import { LandingComponent } from './components/landing/landing.component';
     MdIconModule,
     MdGridListModule,
     MdButtonModule,
+    MdTooltipModule,
     MdCardModule
   ],
   providers: [],
